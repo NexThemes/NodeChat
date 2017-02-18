@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Chat</title>
+  </head>
+  <body>
+    <ul class="w3-navbar w3-teal">
+      <li><a href="#"><i aria-hidden="true" id="connectionStatus" class="fa fa-chain-broken"></i></a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Chat</a></li>
+      <li><a href="#" id="usersOnline"></a></li>
+    </ul>
+
+    <div id="chatArea"></div>
+
+    <form id="submitArea">
+      <input type="text" placeholder="Write Message" id="textMessage" />
+      <input type="submit" value="Say" />
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/client.js" charset="utf-8"></script>
+  </body>
+</html>
